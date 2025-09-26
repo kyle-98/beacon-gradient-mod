@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "beacon-gradient",
+	"version": "${version}",
+	"name": "Beacon Gradient",
+	"description": "Generate the stained glass needed in order to make a gradient out of beacons. This mod will allow the user to execute a command to run an algorithm to determine the best stained glass patterns for the most accurate color gradient for beacon beams based on input parameters from the user.",
+	"authors": [
+		"Kronii's Best Developer"
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "LGPL-3.0-or-later",
+	"icon": "assets/beacon-gradient/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.kronichiwa.BeaconGradient"
+		]
+	},
+	"mixins": [
+		"beacon-gradient.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
